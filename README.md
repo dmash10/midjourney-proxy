@@ -275,3 +275,5 @@ The Java version supports:
 ---
 
 **This is the authentic Java version with full functionality and admin capabilities!** 🚀
+
+<!-- Railway deployment trigger - updated -->
