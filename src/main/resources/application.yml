@@ -1,0 +1,23 @@
+server:
+  port: ${PORT:8080}
+
+mj:
+  accounts:
+    - guild-id: ${DISCORD_GUILD_ID:1202905948075724824}
+      channel-id: ${DISCORD_CHANNEL_ID:1202905948541157386}
+      user-token: ${DISCORD_USER_TOKEN}
+      core-size: 3
+      queue-size: 10
+      timeout-minutes: 5
+  api-secret: ${MJ_API_SECRET:midjourneyproxy123}
+  task-store:
+    type: in_memory
+    timeout: 30d
+  translate-way: null
+  notify-hook: ${NOTIFY_HOOK:}
+
+logging:
+  level:
+    com.github.novicezk.midjourney: INFO
+  file:
+    path: ./logs
